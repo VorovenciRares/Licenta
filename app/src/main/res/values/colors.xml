@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lv_row_background_produse">#DA0384</color>
+    <color name="lv_row_alb">#FBF6F9</color>
+    <color name="btn1">#ADFF2F</color>
+    <color name="btn2">#FFFC3B</color>
+    <color name="blue">#3F51B5</color>
+    <color name="red">#E91E1E</color>
+    <color name="black">#121111</color>
+    <color name="seafom">#93E9BE</color>
+    <color name="lightPurple">#A727B0</color>
+    <color name="paleOrange">#FF9d5c</color>
+    <color name="goodYellow">#F7F14A</color>
+    <color name="palePink">#FADADD</color>
+    <color name="paleRed">#E78587</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="peachColor">#FFA7A6</color>
+    <color name="lavenderColor">#ED91FF</color>
+    <color name="paleGreen">#98fb98</color>
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/hover5"
+    android:id="@+id/custom_adapter">
+
+    <ImageView
+        android:id="@+id/laptop_generic_poza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/genereic_laptop_true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textViewNumeLatop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/laptop1"
+        app:layout_constraintStart_toEndOf="@id/laptop_generic_poza"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@drawable/hover4"/>
+
+    <TextView
+        android:id="@+id/textViewPret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pret"
+        app:layout_constraintStart_toEndOf="@id/laptop_generic_poza"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumeLatop"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@drawable/hover4"/>
+
+
+    <TextView
+        android:id="@+id/textViewMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lei"
+        app:layout_constraintStart_toEndOf="@id/textViewPret"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumeLatop"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@drawable/hover4"/>
+
+    <TextView
+        android:id="@+id/textViewMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@drawable/hover4"/>
+
+    <TextView
+        android:id="@+id/textViewRezolutie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezolutie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMarca"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@drawable/hover4"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

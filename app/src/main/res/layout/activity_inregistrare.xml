@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Logare.InregistrareActivity"
+    android:background="@drawable/custom_background1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icompany"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="170dp"
+                android:layout_marginTop="21dp"/>
+
+            <TextView
+                android:id="@+id/iCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iCompany"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/NumeUtilizator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nume de Utilizator"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+            <EditText
+                android:id="@+id/editTextNumeUtilizator1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/lv_row_alb"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/NumeUtilizator"
+                app:hintTextColor="@color/paleOrange"/>
+
+            <EditText
+        android:id="@+id/editTextParola1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Parola"
+        android:background="@color/lv_row_alb"/>
+
+    <TextView
+        android:id="@+id/Parola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+
+    <TextView
+        android:id="@+id/Varsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Varsta"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumeUtilizator1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <EditText
+        android:id="@+id/editTextVarsta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Varsta"
+        android:background="@color/lv_row_alb"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintTop_toBottomOf="@id/editTextVarsta"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        android:background="@color/lv_row_alb"/>
+
+
+    <Button
+        android:id="@+id/buttonInregistreaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inregistreaza-te"
+        app:layout_constraintTop_toBottomOf="@id/editTextParola1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/hover3"
+        android:textAllCaps="false"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarInregistrare"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonInregistreaza"
+                android:layout_marginTop="25dp"
+                android:visibility="invisible"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

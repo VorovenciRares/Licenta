@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Logare.MainActivity"
+    android:background="@drawable/custom_background1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_EmailLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/lv_row_alb"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:textColorHint="@color/paleOrange"
+        app:hintTextColor="@color/red"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_EmailLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:background="@color/lv_row_alb"
+            android:textColor="@color/red"
+            android:hint="Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_ParolaLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_EmailLog"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/lv_row_alb"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        android:textColorHint="@color/paleOrange"
+        app:hintTextColor="@color/red">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_ParolaLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parola"
+            android:inputType="textPassword"
+            android:background="@color/lv_row_alb"
+            android:textColorHighlight="@color/red"
+            android:textColorHint="@color/red"
+
+            android:fontFamily="sans-serif-condensed-medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/icompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="170dp"
+        android:layout_marginTop="21dp"/>
+
+    <TextView
+        android:id="@+id/iCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iCompany"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/red"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autentificare"
+        app:layout_constraintTop_toBottomOf="@id/SignUp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAllCaps="false"
+        android:background="@drawable/hover3"
+        />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nu ai cont? Inregistreaza-te!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_ParolaLog"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:textColor="@color/red"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        android:text="OR"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/red"/>
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:id="@+id/GoogleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OR"
+        android:layout_marginTop="20dp"
+        app:isDarkTheme="true"
+    />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarMain"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GoogleLogin"
+        android:visibility="invisible"
+        android:layout_marginTop="25dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
